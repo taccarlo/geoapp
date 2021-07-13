@@ -10,5 +10,12 @@
         {
             "profile": "Profile Screen"
         }
+    ],
+    "Map":[
+        {
+            "map":"Map Screen"
+        }
     ]
+
+
 }
