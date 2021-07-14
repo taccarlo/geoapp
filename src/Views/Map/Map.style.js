@@ -5,4 +5,8 @@ export default StyleSheet.create({
     height: 200,
     width: 200,
   },
+  map: {
+    height: '100%',
+    width: '100%',
+  },
 });
