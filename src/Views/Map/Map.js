@@ -20,7 +20,7 @@ const Map = () => {
       provider={null}
       mapType={MAP_TYPES.NONE}
       style={{flex: 1}}
-      style={styleMap.map}
+      //style={styleMap.map}
       showsUserLocation>
       <MapView.UrlTile
         urlTemplate="http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg"
@@ -31,9 +31,23 @@ const Map = () => {
 };
 /*
 
-      <MapView.UrlTile
-        urlTemplate="http://a.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
+ <MapView.UrlTile
+        urlTemplate="http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg"
         maximumZ={19}
       />
+to switch to google
+      provider={PROVIDER_DEFAULT} and
+      mapType={MAP_TYPES.STANDARD}
+removing MapView.UrlTile
+
+//Stamen tiles (OSM-based)
+"https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"
+"https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg"
+
+"http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"
+"http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg"
+
+osm not working cause https://github.com/react-native-maps/react-native-maps/issues/3747
+"http://a.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
 */
 export default Map;
