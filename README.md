@@ -19,14 +19,17 @@ the dependencies of an helloworld proj and add:
 ```
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 ``` 
-and finally
+dependencies for navigation  
 ```
 npm install @react-navigation/stack
 ```
-
-for bottom navigation:    
+dependencies for bottom navigation:    
 ```
 npm install @react-navigation/bottom-tabs
+```
+dependencies for maps:    
+```
+npm install react-native-maps
 ```
 
 *AFTER*
